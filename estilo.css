@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+
+    opacity: 0.7;
+}
+.logo{
+    font-size: 24px;
+    text-transform: uppercase
+}
+
+nav{
+    background-color: #23232e;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, 
+   arial, Arial, Helvetica, sans-serif
+    
+   
+}
+
+.nav-list{
+
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+}
+
+body{
+    background-color: rgba(32, 28, 36, 0.927);
+
+
+}
+
+main{
+    background-color: #f8f8f8aa;
+    width: 1000px;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 0px;
+
+}
+
+img {
+    margin: auto;
+    display: block;
+  }
+
+body{
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#79e4a6), #1bc296;
+}
+
+.search-box{
+        
+    position: absolute;
+    top: 5.90%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    background:  rgba(114, 111, 118, 0.708);;
+    height: 40px;
+    padding: 0px   ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background-color:  rgb(237, 235, 240);
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 50;
+}
+
+.search-btn{
+width: 0px;
+height: 25px;
+border-radius: 100%;
+
+}
+
+.mobile-menu div{
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 999px) {
+    body{
+        overflow: hidden;
+    }
+    
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 3.0s ease-in;
+    }
+
+}
+
+
+
+.mobile-menu {
+
+    display: block;
+    
+}
+.nav-list.active {
+
+    transform: translateX(0);
+}
